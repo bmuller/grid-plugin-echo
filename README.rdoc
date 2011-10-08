@@ -1,0 +1,2 @@
+= Grid Echo Plugin
+This plugin just prints out information using all available hooks for the grid.  For more information, see http://gridcli.com
