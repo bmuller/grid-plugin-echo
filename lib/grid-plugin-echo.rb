@@ -10,3 +10,7 @@ GridCLI.hooker.register(:before_signup) { |username|
   puts "[grid-echo] #{username} is about to sign up!"
   username
 }
+
+GridCLI.hooker.register(:before_update) {
+  puts "[grid-echo] You are updating!  Nice."
+}
