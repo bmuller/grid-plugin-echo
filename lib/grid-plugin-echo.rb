@@ -14,3 +14,8 @@ GridCLI.hooker.register(:before_signup) { |username|
 GridCLI.hooker.register(:before_update) {
   puts "[grid-echo] You are updating!  Nice."
 }
+
+GridCLI.hooker.register(:after_update) { |posts|
+  puts "[grid-echo] Just downloaded #{posts.length} new posts!"
+  posts
+}
